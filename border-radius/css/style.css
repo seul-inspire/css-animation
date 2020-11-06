@@ -1,0 +1,86 @@
+body {
+  background-color: #333;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+.hide {
+  position: absolute;
+  left: -5000px;
+}
+.container {
+  display: flex;
+}
+.square {
+  width: 400px;
+  height: 400px;
+  position: relative;
+  margin: 40px;
+}
+.square span { 
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border: 2px solid #fff;
+  border-radius: 40% 60% 70% 50% / 40% 55% 45% 60%;
+  transition: 0.5s;
+  transform: rotate(0deg); 
+}
+.square:hover span{
+  border: none;
+}
+.square:nth-of-type(1):hover span{
+  background-color: #ffa801;  
+}
+.square:nth-of-type(2):hover span{
+  background-color: #f53b57;
+}
+.square:nth-of-type(3):hover span{
+  background-color: #3c40c6;
+}
+.square span:nth-child(1){
+  animation: circle 3s linear infinite;  
+}
+.square span:nth-child(2){
+  animation: circle 6s linear infinite;
+  animation-direction: reverse;
+}
+.square span:nth-child(3){
+  animation: circle 10s linear infinite;
+}
+.square:hover span:nth-child(1){
+  opacity: 0.8;
+}
+.square:hover span:nth-child(2){
+  opacity: 0.4;
+}
+.square:hover span:nth-child(3){
+  opacity: 0.1;
+}
+@keyframes circle {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.square div {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 80%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #fff;
+}
+a {
+  display: inline-block;
+  text-decoration: none;
+  color: #fff;
+  padding: 10px;
+  border: 1px solid #fff;
+  border-radius: 20% 40% 50% 50% / 50% 55% 45% 60%;
+}
