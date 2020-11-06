@@ -9,8 +9,6 @@ body {
   position: absolute;
   left: -5000px;
 }
-.loading {
-}
 .loading span {
   display: inline-block;
   width: 15px;
