@@ -1,0 +1,38 @@
+/* fontawesome 4.7 */
+@import url('https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+
+body {
+  margin: 0;
+  background-color: #3867d6;
+}
+a {
+  text-decoration: none;
+}
+nav {
+  position: absolute;
+  top: 50%;
+  left: 30px;
+  transform: translateY(-50%);
+}
+nav a {
+  display: block;
+  font-size: 2rem;
+  margin: 10px;  
+  color: #fff;
+  transition: 0.5s;
+}
+nav:hover a {
+  opacity: 0.3;
+}
+nav a:hover {
+  opacity: 1;
+}
+nav a:before { 
+  content:"\f105";
+  font-family: fontawesome;
+  margin-right: 10px;
+  opacity: 0;
+}
+nav a:hover:before {
+  opacity: 1;
+}
