@@ -1,0 +1,48 @@
+body {
+  margin: 0;
+}
+.hide {
+  position: absolute;
+  left: -5000px;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.icon {
+  position: relative;
+  width: 125px;
+  height: 125px;
+  margin: 10px;
+}
+.icon span {
+  position: absolute;
+  width: 300px;
+  padding: 10px;
+  background-color: #333;
+  border-radius: 5px;
+  color: #fff;
+  bottom: 105%;
+  left: 50%;
+  text-align: center;
+  transform: translateX(-50%);
+  opacity: 0;
+  transition: 0.5s;
+  visibility: hidden;
+}
+.icon span:after {
+  content: '';
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background-color: #333;  
+  left: 50%;
+  bottom: -7px;
+  transform: rotate(45deg) translateX(-50%);  
+}
+.icon:hover span {
+  opacity: 1;
+  visibility: visible;
+}
