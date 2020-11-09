@@ -9,6 +9,8 @@
 
 ## /hover
 1. 1-viewdetail.html: 마우스오버하면 상품설명 보여주기
+2. 2-tooltip.html: 마우스오버하면 툴팁보여주기
+3. 3-nav.html: 마우스오버하면 선택한 메뉴 외에는 흐리게 표현
 
 ## /loading
 1. loading1.html: 원형 로딩 애니메이션 (scale 속성)
