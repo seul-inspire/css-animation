@@ -7,6 +7,9 @@
 ## /border-radius
 1. index.html: border-radius 중첩하여 애니메이션 효과
 
+## /hover
+1. 1-viewdetail.html: 마우스오버하면 상품설명 보여주기
+
 ## /loading
 1. loading1.html: 원형 로딩 애니메이션 (scale 속성)
 2. loading2.html: 사각형 로딩 애니메이션 (position 속성)
