@@ -11,6 +11,7 @@
 1. 1-viewdetail.html: 마우스오버하면 상품설명 보여주기
 2. 2-tooltip.html: 마우스오버하면 툴팁보여주기
 3. 3-nav.html: 마우스오버하면 선택한 메뉴 외에는 흐리게 표현
+4. 4-hover-position: 마우스오보하면 위아래로 확장되는 효과 + 아이콘 애니메이션 효과
 
 ## /loading
 1. loading1.html: 원형 로딩 애니메이션 (scale 속성)
