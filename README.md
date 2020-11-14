@@ -6,6 +6,7 @@
 
 ## /before-after
 1. 1-basic.html: before, after 기본 설정 이용하여 메뉴 효과
+2. 2-nav.html: 메뉴를 마우스 오버하면 아래 밑줄이 가운데에서 전체로 퍼지는 효과
 
 ## /border-radius
 1. index.html: border-radius 중첩하여 애니메이션 효과
