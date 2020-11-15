@@ -20,6 +20,9 @@
 4. 4-hover-position.html: 마우스오하면 위아래로 확장되는 효과 + 아이콘 애니메이션 효과
 5. 5-hover-3D.html: 마우스오버하면 3D 느낌의 효과
 
+## /pseudo-class
+1. 1-input.html: 가상클래스를 이용한 입력폼디자인
+
 ## /loading
 1. loading1.html: 원형 로딩 애니메이션 (scale 속성)
 2. loading2.html: 사각형 로딩 애니메이션 (position 속성)
