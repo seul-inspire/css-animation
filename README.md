@@ -22,6 +22,7 @@
 
 ## /pseudo-class
 1. 1-input.html: 가상클래스를 이용한 입력폼디자인
+2. 2-progress-bar.html: 애니메이션 스킬 프로그래스바
 
 ## /loading
 1. loading1.html: 원형 로딩 애니메이션 (scale 속성)
