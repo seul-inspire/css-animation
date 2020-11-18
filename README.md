@@ -26,6 +26,7 @@
 3. 3-flexbox-accordion.html: flexbox 사용하여 아코디언 형식 랜딩페이지 만들기
 4. 4-trigger-btn.html: 트리거버튼(햄버거버튼)css로 작업, 클릭시 rotate 이용해 x모양으로 변경
 5. 5-sidemenu.html: 트리거버튼(햄버거버튼)누르면 사이드 메뉴 활성화
+6. 6-tabmenu.html: 탭메뉴(CSS만 사용, 제이쿼리X)
 
 ## /loading
 1. loading1.html: 원형 로딩 애니메이션 (scale 속성)
