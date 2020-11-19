@@ -1,0 +1,93 @@
+body {
+  margin: 0;
+}
+.container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.tab-inner {  
+  width: 400px;
+  height: 450px;
+  overflow: hidden;
+  position: relative;
+}
+input[name=tabmenu] {
+  display: none;
+}
+.content {
+  opacity: 0;
+  visibility: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translateX(-55px);
+  transition: 0.5s;  
+}
+.content img {
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, .3);
+}
+/* 세일배너 디자인 */
+.slide-text1,
+.slide-text2 {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  color: #fff;
+  text-align: center;
+  font-weight: bold;
+  font-size: 30px;
+  padding-top: 15px;
+  box-sizing: border-box;
+  background-color: yellowgreen;
+  opacity: 0;
+  transform: translateY(-100px);
+  transition: 0.5s;
+}
+.slide-text2 {
+  background-color: crimson;
+}
+.slide-text1 span,
+.slide-text2 span {
+  display: block;
+  font-size: 20px;
+}
+/* 탭버튼 디자인 */
+.btn {
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  bottom: 10px;
+}
+.btn label {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-color: lightgray;
+  border-radius: 50%;  
+  cursor: pointer;
+  transition: 0.5s;
+}
+/* 탭버튼 클릭시 이벤트 */
+input[id=tab1]:checked ~ .slide1,
+input[id=tab2]:checked ~ .slide2 {
+  opacity: 1;
+  visibility: visible ;
+  transform: translateX(0);
+}
+input[id=tab1]:checked ~ .sale-label .slide-text1,
+input[id=tab2]:checked ~ .sale-label .slide-text2 {
+  opacity: 1;
+  transform: translateY(0px);
+  transition-delay: 0.8s;
+}
+input[id=tab1]:checked ~ .btn label[for=tab1],
+input[id=tab2]:checked ~ .btn label[for=tab2] {
+  background-color: crimson;
+}
