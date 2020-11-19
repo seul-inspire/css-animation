@@ -27,6 +27,7 @@
 4. 4-trigger-btn.html: 트리거버튼(햄버거버튼)css로 작업, 클릭시 rotate 이용해 x모양으로 변경
 5. 5-sidemenu.html: 트리거버튼(햄버거버튼)누르면 사이드 메뉴 활성화
 6. 6-tabmenu.html: 탭메뉴(radio 버튼 클릭하면 콘텐츠 전환)
+7. 7-tabmenu.html: 탭메뉴 디자인 업그레이드 (SALE 라벨 추가)
 
 ## /loading
 1. loading1.html: 원형 로딩 애니메이션 (scale 속성)
