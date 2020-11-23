@@ -29,6 +29,7 @@
 6. 6-tabmenu.html: 탭메뉴(radio 버튼 클릭하면 콘텐츠 전환)
 7. 7-tabmenu.html: 탭메뉴 디자인 업그레이드 (SALE 라벨 추가)
 8. 8-slide.html: 탭 슬라이드 효과
+9. 9-slide-2.html: 풀스크린 슬라이더
 
 ## /loading
 1. loading1.html: 원형 로딩 애니메이션 (scale 속성)
