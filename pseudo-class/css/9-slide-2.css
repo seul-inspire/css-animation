@@ -1,0 +1,106 @@
+body {
+  margin: 0;
+}
+.slide-wrap {
+}
+input[name=slide-menu] {
+  display: none;
+}
+.slide {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+}
+.slide .items {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 300%;
+  height: 100vh;
+  transition: 0.5s;
+}
+.slide .items div {
+  /* border: 1px solid blue; */
+  position: relative;
+  float: left;
+  width: calc(100% / 3);
+  height: 100vh;
+  box-sizing: border-box;
+}
+.slide .items div:nth-child(1) {
+  background: url(/images/photo-01.jpg) no-repeat center center fixed;
+  background-size: cover;
+}
+.slide .items div:nth-child(2) {
+  background: url(/images/photo-02.jpg) no-repeat center center fixed;
+  background-size: cover;
+}
+.slide .items div:nth-child(3) {
+  background: url(/images/photo-03.jpg) no-repeat center center fixed;
+  background-size: cover;
+}
+.slide .items div:before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;  
+}
+.slide .items div:nth-child(1):before {
+  background: linear-gradient(135deg, crimson, transparent);
+}
+.slide .items div:nth-child(2):before {
+  background: linear-gradient(135deg, gold, transparent);
+}
+.slide .items div:nth-child(3):before {
+  background: linear-gradient(135deg, royalblue, transparent);
+}
+.slide .items div h1 {
+  position: relative;
+  color: #fff; 
+  text-align: center; 
+  font-size: 150px;
+  transform: translateY(-200px);
+  opacity: 0;
+  transition: 0.5s;
+  transition-delay: 0.5s;
+}
+.btn {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 50px;
+  line-height: 50px;
+  background-color: rgba(0, 0, 0, .5);
+  text-align: center;
+}
+.btn label {
+  display: inline-block;
+  height: 50px;
+  padding: 0 15px;
+  margin: 0 15px;
+  color: #fff;
+  cursor: pointer;
+}
+.btn label:hover {
+  background-color: rgba(0, 0, 0, .5);
+}
+input[id=slide01]:checked ~ .slide .items {
+  left: 0;
+}
+input[id=slide02]:checked ~ .slide .items {
+  left: -100%;
+}
+input[id=slide03]:checked ~ .slide .items {
+  left: -200%;
+}
+input[id=slide01]:checked ~ .btn label[for=slide01],
+input[id=slide02]:checked ~ .btn label[for=slide02],
+input[id=slide03]:checked ~ .btn label[for=slide03] {
+  color: gold;
+}
+input[id=slide01]:checked ~ .slide .items div:nth-child(1) h1,
+input[id=slide02]:checked ~ .slide .items div:nth-child(2) h1,
+input[id=slide03]:checked ~ .slide .items div:nth-child(3) h1{
+  transform: translateY(0);
+  opacity: 1;
+}
