@@ -1,0 +1,77 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.tab-wrap {
+  height: 550px;
+  text-align: center;
+}
+.tab-wrap h1 {
+  font-weight: normal;
+  font-size: 35px;
+}
+input[name="slide"] {
+  display: none;
+}
+.slide-wrap {
+  position: relative;
+  width: 800px;
+  height:400px;
+  overflow: hidden;
+}
+.slide-wrap .items {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 2400px;
+  transition: 0.5s;
+}
+.slide-wrap .items div {  
+  float: left;
+  padding: 50px;
+  width: 800px;
+  height: 400px;
+  box-sizing: border-box;
+}
+.slide-wrap .items div img {
+  width: 100px;
+  border-radius: 50%;
+}
+.slide-wrap .items div p b {
+  display: block;
+}
+.slide-wrap .items div p span {
+  color: orange;
+}
+.btn {
+  padding: 10px;
+}
+.btn label {
+  display: inline-block;
+  width: 40px;
+  height: 10px;
+  background-color: lightgray;
+  border-radius: 10%;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+/* 라디오 버튼 체크시 위치 전환 */
+input[id=slide01]:checked ~ .slide-wrap .items {
+  left: 0;
+}
+input[id=slide02]:checked ~ .slide-wrap .items {
+  left: -100%;
+}
+input[id=slide03]:checked ~ .slide-wrap .items {
+  left: -200%;
+}
+
+/* label 선택되었을 때 */
+input[id=slide01]:checked ~ .btn label[for=slide01],
+input[id=slide02]:checked ~ .btn label[for=slide02],
+input[id=slide03]:checked ~ .btn label[for=slide03]{
+  background-color: crimson;  
+}
